@@ -1,0 +1,137 @@
+.maintenance-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+.maintenance-overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: block; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+.icon-purp {
+  color: #9F2B67;
+}
+.body, .html {
+  overflow: hidden;
+  width: 100%;
+}
+.icon-yellow {
+  color: #fcc468;
+}
+.icon-green {
+  color: #6bd098;
+}
+.icon-red {
+  color: #f17e5d;
+}
+.icon-blue {
+  color: #51CACF;
+}
+
+.dash-input {
+  font: inherit;
+    color: currentColor;
+    width: 5rem;
+    font-size: 2.2rem;
+    border: 0;
+    height: 1.1876em;
+    margin: 0;
+    display: block;
+    padding: 6px 0 7px;
+    min-width: 0;
+    background: none;
+    box-sizing: content-box;
+    animation-name: mui-auto-fill-cancel;
+    -webkit-tap-highlight-color: transparent;
+}
+.dash-form {
+  width: 50%;
+}
+.card-row {
+  // padding-left: 1rem;
+  float: right;
+}
+
+.bell-icon {
+  width: 1.3rem;
+  vertical-align: middle;
+  padding-left: .05rem;
+}
+
+.bell-span {
+  display: inline-block;
+}
+.card {
+  background-color: #D2E9D0;
+
+}
+
+/* Fix Input Zoom on iPhone 6 Plus, iPhone 6s Plus, iPhone 7 Plus, iPhone 8, iPhone X, XS, XS Max  */
+@media screen and (device-aspect-ratio: 9/16) {
+  select, textarea, input[type="text"], input[type="password"],
+  input[type="datetime"], input[type="datetime-local"],
+  input[type="date"], input[type="month"], input[type="time"],
+  input[type="week"], input[type="number"], input[type="email"],
+  input[type="url"]{ font-size: 16px; }
+}
+
+.card-chart {
+  .card-header{
+    .card-title{
+      margin-top: 10px;
+      margin-bottom: 0;
+    }
+    .card-category{
+      margin-bottom: 5px;
+    }
+  }
+
+  .table{
+    margin-bottom: 0;
+
+    td{
+      border-top: none;
+      border-bottom: 1px solid #e9ecef;
+    }
+  }
+
+  .card-progress {
+    margin-top: 30px;
+  }
+
+  .chart-area {
+    height: 190px;
+    width: calc(100% + 30px);
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .card-footer {
+    margin-top: 15px;
+
+    .stats{
+      color: $dark-gray;
+    }
+  }
+
+  .dropdown{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+
+    .btn{
+      margin: 0;
+    }
+  }
+}
