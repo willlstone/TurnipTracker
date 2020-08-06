@@ -455,6 +455,20 @@ populateData = () => {
         </div>
       </div> */}
       {/* <button onClick={this.populateData()}>POPULATE</button> */}
+      <div>
+        <img
+          src="https://vignette.wikia.nocookie.net/animalcrossing/images/e/ef/NH-character-Tom_Nook.png/revision/latest/top-crop/width/360/height/360?cb=20191228193640"
+          alt="Tom Nook"
+          style={{width: 90, position: "absolute", transform: "rotate(90deg)"}}
+          />
+
+        <img
+          src="https://vignette.wikia.nocookie.net/animalcrossing/images/8/83/Goldie_NH.png/revision/latest/top-crop/width/360/height/450?cb=20200625095858"
+          alt="Isabelle"
+          style={{width: 70, position: "absolute", right: 0, bottom: 0}}
+          />
+
+      </div>
       
         <div className="content content-bg">
         {this.state.Islands.OldZealand && 
